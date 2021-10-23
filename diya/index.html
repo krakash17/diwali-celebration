@@ -1,0 +1,58 @@
+<html>
+<head>
+	
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="diya">    
+          <div class="diya-top"></div>
+          <div class="diya-left"></div>
+          <div class="diya-right"></div>
+        </div>
+        <div class="flame">
+          <div class="thread"></div>
+          <div id = "flame-top" style="display: none;" class="flame-top"></div>
+          <div id = "flame-blink" style="display: none;" class="blink"></div>
+          <div id = "flame-bottom" style="display: none;" class="flame-bottom"></div>    
+        </div>
+
+
+        
+   
+       
+      </div>
+      <div class="controls">
+        <button id="lightDiya" class="btn" style="background-color: #FF9933 ">Light the Diya</button>
+            
+               <button id="resetBtn" class="btn" style="background-color:  #138808">Refresh</button>
+               </div>
+    
+	
+	<script>
+          var flametop = document.getElementById("flame-top"),
+          flameblink = document.getElementById("flame-blink"),
+          flamebottom = document.getElementById("flame-bottom")
+
+          lightDiya.onclick = function (){
+            flametop.style.display = "block";
+            flameblink.style.display = "block";
+            flamebottom.style.display = "block";
+          }
+          resetBtn.onclick = function (){
+            flametop.style.display = "none";
+            flameblink.style.display = "none";
+            flamebottom.style.display = "none";
+          }
+
+       
+    </script>
+</body>
+<html>
