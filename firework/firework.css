@@ -6,19 +6,19 @@
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
 }
-body
+/* body
 {
 	background: #003056;
-}
+} */
 section
 {
-	position: relative;
+	
 	width: 100%;
 	height: 100vh;
 }
 .fireworks
 {
-	position: fixed;
+	
 }
 section.content
 {

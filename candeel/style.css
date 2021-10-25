@@ -1,11 +1,11 @@
-body{
+/* body{
 	margin: 0px;
 	padding: 0px;
 	background: #000;
 	width: 100%;
 	height: 100%;
 	position: fixed;
-}
+} */
 ul,ol{
 	list-style-type: none;
 	margin: 0px;
@@ -87,11 +87,13 @@ transition: all 0.4s ease-in-out;
 				1200px 170px 5px 2px #fff,1250px 100px 5px 2px #fff,1300px 50px 5px 2px #fff,1350px 100px 5px 2px #fff;
 }
 .lantern{
-	position: relative;
-	margin: 40px auto;
-	margin-bottom: 0px;
-	width: 200px;
-	height: 400px;
+	position: absolute;
+    margin: 40px auto;
+    margin-bottom: 0px;
+    width: 197px;
+    left: 70%;
+	z-index:1;
+    height: 222px;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;

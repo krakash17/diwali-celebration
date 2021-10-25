@@ -1,13 +1,14 @@
-body{
+/* body{
     background:black;
-  }
-  .container{
+  } */
+  .content{
     display:flex;
     align-items:center;
     justify-content:center;
-    background:black;
     flex-direction:row;
-    margin-top:200px;
+    top: 27%;
+    left: 37%;
+    position: absolute;
   }
   .diya{
     display:flex;
@@ -139,8 +140,11 @@ body{
   }
   .controls{
     position: absolute;
-    bottom: 30%;
-    left: 42%;
+   
+    bottom: 13%;
+    z-index: 1;
+    left: 35%;
+
   }
   .btn{
    

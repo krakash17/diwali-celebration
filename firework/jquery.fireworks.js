@@ -27,13 +27,15 @@
 
     // create canvas and get the context
     var canvas = document.createElement('canvas');
+    ctx = canvas.getContext("2d")
+
     canvas.id = 'fireworksField';
 		canvas.width = SCREEN_WIDTH;
 		canvas.height = SCREEN_HEIGHT;
 		canvas.style.width  = SCREEN_WIDTH + 'px';
 		canvas.style.height = SCREEN_HEIGHT + 'px';
 		canvas.style.position = 'absolute';
-		canvas.style.top = '0px';
+		canvas.style.top = '58px';
 		canvas.style.left = '0px';
     canvas.style.opacity = options.opacity;
     var context = canvas.getContext('2d');
@@ -196,8 +198,8 @@
             canvas.height = SCREEN_HEIGHT = window.innerHeight;
         }
 
-        // clear canvas
-        context.fillStyle = "rgba(0, 0, 0, 0.05)";
+        // clear canvas "rgba(0, 0, 0, 0.05)";
+        context.fillStyle = "rgb(12, 0, 102)";
         context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
         var existingRockets = [];
