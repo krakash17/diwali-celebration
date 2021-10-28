@@ -13,16 +13,63 @@
     <link rel="stylesheet" type="text/css" href="/firework/firework.css">
     <link rel="stylesheet" type="text/css" href="/candeel/style.css">
 
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
     <script type="text/javascript" src="/firework/jquery.fireworks.js"></script>
     <title>Diwali Celebration 2021</title>
   
 </head>
-<body>
+<body id="body">
     
     <!--  " -->
         
-<div class="container">
+<div class="container" id="container">
+
+    <div class="lights">
+        <ul class="lightrope">
+            <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          
+    </div>
+
+    
   
     <div class="lantern" id="lantern">
         <div class="lantern-hang"></div>
@@ -40,16 +87,66 @@
     <li></li>
     <li></li>
     <li></li>
+  <!--   <li></li>
+    <li></li>
+    <li></li>
+    <li></li> -->
+    </ul>
+    </div>
+    </div>
+
+    <div class="lantern" style="right:3%;margin:40px auto"id="lantern">
+        <div class="lantern-hang"></div>
+    <div class="lantern-top">
+    </div>	
+    <div class="lantern-inner">
+    <div class="lantern-left">
+    
+    </div>
+    <div class="lantern-bottom">
+    </div>
+    <ul class="ribbons">
     <li></li>
     <li></li>
     <li></li>
     <li></li>
+    <li></li>
+  <!--   <li></li>
+    <li></li>
+    <li></li>
+    <li></li> -->
     </ul>
     </div>
     </div>
 
 
-        <div class="img-div">
+
+    <div class="lantern" style="left:87%;margin:40px auto"id="lantern">
+        <div class="lantern-hang"></div>
+    <div class="lantern-top">
+    </div>	
+    <div class="lantern-inner">
+    <div class="lantern-left">
+    
+    </div>
+    <div class="lantern-bottom">
+    </div>
+    <ul class="ribbons">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  <!--   <li></li>
+    <li></li>
+    <li></li>
+    <li></li> -->
+    </ul>
+    </div>
+    </div>
+
+
+        <div class="img-div" style="position: absolute;z-index: 2;">
             <img src="/src/knol.png.crdownload" style="border-radius: 8px;
             width: 15%;"alt="Knoldus">
         </div>
@@ -64,6 +161,22 @@
               <div id = "flame-top" style="display: none;" class="flame-top"></div>
               <div id = "flame-blink" style="display: none;" class="blink"></div>
               <div id = "flame-bottom" style="display: none;" class="flame-bottom"></div>    
+            </div>
+          </div>
+
+          <div class="content" style="left:71%; direction: rtl;">
+            <div class="diya" style="margin-left: -15px;">    
+              <div class="diya-top"></div>
+              <div class="diya-left" style="border-radius: 0px 14px 96px 0%;    width: 83px;height:64px"></div>
+              <div class="diya-right" style="    border-radius: 0px 8px 12% 245px;"></div>
+           
+              
+            </div>
+            <div class="flame">
+              <div class="thread" style="transform:rotatez(-12deg);"></div>
+              <div id = "flame-top1" style="display: none;" class="flame-top"></div>
+              <div id = "flame-blink1" style="display: none;" class="blink"></div>
+              <div id = "flame-bottom1" style="display: none;" class="flame-bottom"></div>    
             </div>
           </div>
 
@@ -119,7 +232,12 @@
 <script>
     var flametop = document.getElementById("flame-top"),
     flameblink = document.getElementById("flame-blink"),
-    flamebottom = document.getElementById("flame-bottom")
+    flamebottom = document.getElementById("flame-bottom"),
+    flametop1 = document.getElementById("flame-top1"),
+    flameblink1 = document.getElementById("flame-blink1"),
+    flamebottom1 = document.getElementById("flame-bottom1"),
+    container = document.getElementById("container"),
+    canvas = document.getElementById("canvas")
 
     lightDiya.onclick = function (){
         $('.fireworks').fireworks({ 
@@ -131,11 +249,20 @@
       flametop.style.display = "block";
       flameblink.style.display = "block";
       flamebottom.style.display = "block";
+      flametop1.style.display = "block";
+      flameblink1.style.display = "block";
+      flamebottom1.style.display = "block";
+     
+      
     }
     resetBtn.onclick = function (){
+        // $('.fireworks').stop(stopAll, goToEnd)
       flametop.style.display = "none";
       flameblink.style.display = "none";
       flamebottom.style.display = "none";
+      flametop1.style.display = "none";
+      flameblink1.style.display = "none";
+      flamebottom1.style.display = "none";
     }
 
  

@@ -6,14 +6,14 @@
     align-items:center;
     justify-content:center;
     flex-direction:row;
-    top: 27%;
-    left: 37%;
+    top: 34%;
+    left: 13%;
     position: absolute;
   }
   .diya{
     display:flex;
     flex-direction:row;
-    width:220px;
+    width:178px;
     margin-top:75px;
     z-index:1;
   }
@@ -33,7 +33,7 @@
     margin-left:-2px;
   }
   .diya-top{
-    width:210px;
+    width:166px;
     height:15px;
     border-radius:50%;
     border:8px solid #5D351F;
