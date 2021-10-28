@@ -24,6 +24,24 @@
         
 <div class="container" id="container">
 
+     <div class="confetti" style="display: none;" id="confetti"hidden>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+    </div>
+
+    
+
     <div class="lights">
         <ul class="lightrope">
             <!-- <li></li>
@@ -184,15 +202,53 @@
             <h1 class="greeting fadeInU">Happy Diwali</h1>
     
           </div>
-          <div class="controls">
-            <button id="lightDiya" class="btn" style="background-color: #FF9933 ">Light the Diya</button>
-                
-                   <button id="resetBtn" class="btn" style="background-color:  #138808">Refresh</button>
-                   </div>
+          
+
+                   <div class="candle">
+                    <div class="candle-1">
+                        <div class="wax"></div>
+                        <div class="flame flame1" id="candlle1" style="display: none;"></div>
+                    </div>
+                    <div class="candle-2"> 
+                        <div class="wax"></div>
+                        
+                            <div class="flame flame2"id="candlle2"  style="display: none;"></div>
+                     
+                        
+                    </div>
+                    <div class="candle-3">
+                        <div class="wax"></div>
+                        <div class="flame flame3" id="candlle3" style="display: none;"></div>
+                    </div>
+                  
+                </div>
+
+
+
+                <div class="candle candle2" style="left:90%">
+                    <div class="candle-1">
+                        <div class="wax"></div>
+                        <div class="flame flame4" id="candlle4" style="display: none;"></div>
+                    </div>
+                    <div class="candle-2">
+                        <div class="wax"></div>
+                        <div class="flame flame5" id="candlle5" style="display: none;"></div>
+                    </div>
+                    <div class="candle-3">
+                        <div class="wax"></div>
+                        <div class="flame flame6" id="candlle6" style="display: none;"></div>
+                    </div>
+                  
+                </div>
+             
             <!-- <canvas id="canvas1" style= " position: absolute"></canvas> -->
              <section class="fireworks" id="sec1"></section> 
     
-             
+             <div class="controls">
+                <button id="lightDiya" class="btn" style="background-color: #FF9933 ">Light the Diya</button>
+                    
+                       <button id="resetBtn" class="btn" style="background-color:  #138808">Refresh</button>
+                       </div>
             </div>   
               <!-- <section class="content" id="sec2">
                   <h2>
@@ -237,7 +293,14 @@
     flameblink1 = document.getElementById("flame-blink1"),
     flamebottom1 = document.getElementById("flame-bottom1"),
     container = document.getElementById("container"),
-    canvas = document.getElementById("canvas")
+    confetti = document.getElementById("confetti"),
+  
+    flame6 = document.querySelector('.flame6'),
+    flame5 = document.querySelector('.flame5'),
+    flame4 = document.querySelector('.flame4'),
+    flame3 = document.querySelector('.flame3'),
+    flame2 = document.querySelector('.flame2'),
+    flame1 = document.querySelector('.flame1')
 
     lightDiya.onclick = function (){
         $('.fireworks').fireworks({ 
@@ -252,6 +315,15 @@
       flametop1.style.display = "block";
       flameblink1.style.display = "block";
       flamebottom1.style.display = "block";
+      confetti.style.display = "block";
+
+      
+      flame1.style.display = "block";
+      flame2.style.display = "block";
+      flame3.style.display = "block";
+      flame4.style.display = "block";
+      flame5.style.display = "block";
+      flame6.style.display = "block";
      
       
     }
@@ -263,6 +335,13 @@
       flametop1.style.display = "none";
       flameblink1.style.display = "none";
       flamebottom1.style.display = "none";
+      confetti.style.display = "none";
+       flame1.style.display = "none";
+      flame2.style.display = "none";
+      flame3.style.display = "none";
+      flame4.style.display = "none";
+      flame5.style.display = "none";
+      flame6.style.display = "none";
     }
 
  
