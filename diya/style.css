@@ -140,10 +140,10 @@
   }
   .controls{
     position: absolute;
-   
-    bottom: 13%;
+    bottom: 4%;
     z-index: 1;
-    left: 35%;
+    left: 33%;
+
 
   }
   .btn{

@@ -16,6 +16,9 @@ body{
   
 
   .greeting{
+   
+    text-align:center;
+    /* text-shadow:1px -1px #da0, 2px -2px #da0, 3px -3px #da0, 4px -4px #da0, 5px -5px #da0; */
     font-family: 'Poppins', sans-serif;
     font-size: 83px;
     font-weight:700;
@@ -824,4 +827,56 @@ background: red;
 .behance-icon:hover {
   transition-duration: 1s;
   transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.light {
+  animation:top-right 5s ease-in-out alternate infinite;
+  border-bottom:none;
+  border-left:solid 20vh transparent;
+  border-right:solid 20vh transparent;
+  border-top:solid 200vh rgba(255, 255, 255, .5);
+  bottom:0;
+  height:0;
+  left:0;
+  position:absolute;
+  transform-origin:bottom;
+  width:0;
+}
+
+.light + .light {
+  animation:top-left 4s ease-in-out alternate infinite;
+  left:auto;
+  right:0;
+}
+
+@keyframes top-right {
+  0% {
+    transform:rotate(-10deg);
+  }
+  100% {
+    transform:rotate(70deg);
+  }
+}
+
+@keyframes top-left {
+  0% {
+    transform:rotate(10deg);
+  }
+  100% {
+    transform:rotate(-70deg);
+  }
 }
